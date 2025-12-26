@@ -8,9 +8,11 @@ public class ex2 {
         String msv = sc.nextLine();
         System.out.println("Nhap ho ten:");
         String hoTen = sc.nextLine();
+        String hoTenKC = hoTen.replace(" ", "");
         System.out.println("Nhap nam sinh:");
         int namSinh = sc.nextInt();
         int namSinhSoCuoi = namSinh % 10;
-        System.out.println(msv+"_"+hoTen+"_"+namSinhSoCuoi);
+        String a = String.join("_", msv, hoTenKC, String.valueOf(namSinhSoCuoi));
+        System.out.println(a);
     }
 }
