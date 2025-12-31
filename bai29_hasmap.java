@@ -44,6 +44,5 @@ public class bai29_hasmap {
             String vl = map.get(key);
             System.out.println(key+" :"+vl);
         }
-
     }
 }
