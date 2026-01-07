@@ -6,6 +6,7 @@ public class SV {
     private String ten;
     private double dtb;
     private XepLoai loai;
+
     //constructor
     public SV(int ma, String ten, double dtb) {
         this.ma = ma;
@@ -13,6 +14,7 @@ public class SV {
         this.dtb = dtb;
         this.loai = getLoai();
     }
+
     //phương thức để getLoai
     public XepLoai getLoai(){
         if(this.dtb>=8)
@@ -27,7 +29,6 @@ public class SV {
             loai=XepLoai.duoihoc;
         return loai;
     }
-    
 
     //toString
     @Override
