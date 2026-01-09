@@ -8,7 +8,7 @@ public class Exer5 {
         long N = sc.nextLong();
         long giaithuaN = 1;
         long a = 1;
-        do { 
+        do {
             giaithuaN*=a;
             a++;
         } while (a<=N);

@@ -5,16 +5,16 @@ public class Exer4 {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
        System.out.println("Nhap cac phan tu cua mang: ");
-       int a[]= new int[5];
+       int[] mang;
        int max =0;
        for (int i = 0; i < 5; i++) {
-           a[i] = sc.nextInt();
+           mang[i] = sc.nextInt();
            if (i == 0) {
-               max = a[i];
-           }else if(a[i] > max){
-            max = a[i];
+               max = mang[i];
+           }else if(mang[i] > max){
+            max = mang[i];
            }
        }
        System.out.println("Gia tri lon nhat cua phan tu trong mang la: " +max);
     }
-}   
+}
